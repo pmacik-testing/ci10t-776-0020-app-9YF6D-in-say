@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-egcl
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0020-tenant/ci10t-776-0020-app/devfile-sample-egcl@sha256:f8b6bb956b4893276d7002134d1043f63276964d111695063743cb23265fab8a
+        name: my-nodejs
+        resources: {}
+status: {}
